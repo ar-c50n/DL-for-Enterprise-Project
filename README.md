@@ -140,15 +140,18 @@ docker run -p 8000:8000 wildfire-clf
 
 ```bash
 minikube start --driver=docker
+kubectl get nodes
 minikube docker-env | Invoke-Expression
 docker build -t wildfire-clf:latest .
 
 # apply deployment
 kubectl apply -f deployment.yaml
+kubectl get pods
 kubectl apply -f service.yaml
 
 # expose service
-minikube tunnel # http://127.0.0.1:8000/
+minikube tunnel 
+kubectl get svc # http://127.0.0.1:8000/
 ```
 
 ---
