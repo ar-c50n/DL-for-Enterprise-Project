@@ -72,11 +72,12 @@ Place the downloaded file in the `wildfire_clf/app/weights/` directory:
 ## 📂 Repository Structure
 ```text
 wildfire_clf/
-├── app/
-    ├── weights/          
+└── app/
+    └── weights/          
         ├── resnet.pth      
         ├── resmlp.pth     
         └── vit.pth  
+```
 
 ---
 
